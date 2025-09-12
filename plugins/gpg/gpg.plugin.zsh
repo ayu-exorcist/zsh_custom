@@ -9,7 +9,7 @@ if ! (( $+commands[gpg] )); then
 fi
 
 export GNUPGHOME=${GNUPGHOME:=${XDG_DATA_HOME:-$HOME/.local/share}/gnupg}
-[[ -e $GNUPGHOME:h ]] || mkdir -p $GNUPGHOME:h
+[[ -e $GNUPGHOME ]] || mkdir -p $GNUPGHOME
 alias gpg="${aliases[gpg]:-gpg} --homedir \"$GNUPGHOME\""
 
 # Mark the plugin as loaded
