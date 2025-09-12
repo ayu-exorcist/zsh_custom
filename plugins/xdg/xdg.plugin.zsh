@@ -44,10 +44,6 @@ alias wget="${aliases[wget]:-wget} --hsts-file=\$XDG_CACHE_HOME/wget/wget-hsts"
 # Dev tools
 #
 
-# gpg
-export GNUPGHOME="${GNUPGHOME:-$XDG_DATA_HOME/gnupg}"
-alias gpg="${aliases[gpg]:-gpg} --homedir \"\$GNUPGHOME\""
-
 # jupyter
 export JUPYTER_CONFIG_DIR="${JUPYTER_CONFIG_DIR:-$XDG_CONFIG_HOME/jupyter}"
 
