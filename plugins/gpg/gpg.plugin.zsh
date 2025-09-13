@@ -10,6 +10,7 @@ fi
 
 export GNUPGHOME=${GNUPGHOME:=${XDG_DATA_HOME:-$HOME/.local/share}/gnupg}
 [[ -e $GNUPGHOME ]] || mkdir -p $GNUPGHOME
+chmod 700 "$GNUPGHOME"
 alias gpg="${aliases[gpg]:-gpg} --homedir \"$GNUPGHOME\""
 
 # Mark the plugin as loaded

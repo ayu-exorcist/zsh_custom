@@ -1,5 +1,5 @@
 # run:
-# $ repo in <repos.txt
+# $ repo install <repos.txt
 
 # frameworks
 ohmyzsh/ohmyzsh
