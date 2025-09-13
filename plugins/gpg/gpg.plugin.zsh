@@ -4,7 +4,7 @@
 
 
 if ! (( $+commands[gpg] )); then
-  echo "gnupg not found" >&2
+  echo "gnupg not found.\nPlease download and install it from https://www.gnupg.org/." >&2
   return 1
 fi
 
